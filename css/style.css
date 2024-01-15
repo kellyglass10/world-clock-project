@@ -1,23 +1,7 @@
 body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/337/original/andrej-lisakov-3A4XZUopCJA-unsplash_%281%29.jpg?1705109394);
   background-size: 100vw 100vh;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  background: white;
-  padding: 30px;
-  margin: 60px 0;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-}
-
-select {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -26,7 +10,57 @@ h1 {
   font-size: 36px;
 }
 
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 10px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding: 30px 0;
+}
+
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.7;
+}
+
+.time {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 18px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
 footer {
   text-align: center;
   color: white;
+  font-size: 15px;
 }
