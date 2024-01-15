@@ -39,7 +39,8 @@ function updateCity(event) {
           <div class="time">${cityTime.format(
             "h:mm:ss"
           )}<small>${cityTime.format("A")}</small></div>
-        </div>`;
+        </div>
+        <a href="https://kg-world-clock.netlify.app/">Home</a>`;
 }
 
 updateTime();
