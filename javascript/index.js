@@ -22,6 +22,9 @@ function updateTime() {
   );
 }
 
+updateTime();
+setInterval(updateTime, 1);
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -42,9 +45,6 @@ function updateCity(event) {
         </div>
         <a href="https://kg-world-clock.netlify.app/">Home</a>`;
 }
-
-updateTime();
-setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
